@@ -4,7 +4,8 @@
   "description": "redux-react-tutorial from: http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --compilers js:babel-core/register --recursive",
+    "test:watch": "npm run test -- --watch"
   },
   "keywords": [],
   "author": "Matthew Davis",
@@ -14,13 +15,15 @@
     "babel-core": "^6.9.0",
     "babel-preset-es2016": "^6.0.11",
     "chai": "^3.5.0",
+    "chai-immutable": "^1.5.4",
     "mocha": "^2.5.2"
   },
-  "scripts": {
-    "test": "mocha --compilers js:babel-core/register --recursive",
-    "test:watch": "npm run test -- --watch"
-  },
   "babel": {
-    "presets": [ "es2015" ]
+    "presets": [
+      "es2015"
+    ]
+  },
+  "dependencies": {
+    "immutable": "^3.8.1"
   }
 }
