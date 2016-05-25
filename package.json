@@ -4,6 +4,7 @@
   "description": "redux-react-tutorial from: http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html",
   "main": "index.js",
   "scripts": {
+    "start": "babel-node index.js",
     "test": "mocha --compilers js:babel-core/register --recursive --require ./test/test_helper.js  --recursive",
     "test:watch": "npm run test -- --watch"
   },
