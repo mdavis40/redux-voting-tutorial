@@ -12,6 +12,8 @@
   "devDependencies": {
     "babel-cli": "^6.9.0",
     "babel-core": "^6.9.0",
-    "babel-preset-es2016": "^6.0.11"
+    "babel-preset-es2016": "^6.0.11",
+    "chai": "^3.5.0",
+    "mocha": "^2.5.2"
   }
 }
